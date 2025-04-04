@@ -1,0 +1,14 @@
+<div class="container">
+  <!-- Formulário para buscar curiosidades sobre o número -->
+  <form (submit)="buscarDadosNumero()">
+    <h2>Curiosidades sobre o número...</h2>
+    <input type="number" name="txtnumero" id="txtnumero" [(ngModel)]="_userNumber" placeholder="Digite um número"
+      required />
+    <button type="submit">Buscar</button>
+  </form>
+
+  <!-- Painel de Resposta -->
+  <div class="response-panel" *ngIf="_mensagem">
+    <p>{{ _mensagem }}</p>
+  </div>
+</div>

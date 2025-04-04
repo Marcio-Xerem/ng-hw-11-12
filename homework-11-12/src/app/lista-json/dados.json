@@ -1,0 +1,52 @@
+[
+  {
+    "idloja": 1,
+    "nome": "Boutique Encanto",
+    "localizacao": "PISO 1"
+  },
+  {
+    "idloja": 2,
+    "nome": "Tecno Mania",
+    "localizacao": "PISO 2"
+  },
+  {
+    "idloja": 3,
+    "nome": "Casa do Livro",
+    "localizacao": "PISO 3"
+  },
+  {
+    "idloja": 4,
+    "nome": "Moda VIP",
+    "localizacao": "SOBRELOJA 1"
+  },
+  {
+    "idloja": 5,
+    "nome": "Café & Companhia",
+    "localizacao": "PISO TÉRREO"
+  },
+  {
+    "idloja": 6,
+    "nome": "Brinquedos Alegres",
+    "localizacao": "PISO 4"
+  },
+  {
+    "idloja": 7,
+    "nome": "Fitness Pro",
+    "localizacao": "PISO 5"
+  },
+  {
+    "idloja": 8,
+    "nome": "Arte e Decor",
+    "localizacao": "SOBRELOJA 2"
+  },
+  {
+    "idloja": 9,
+    "nome": "Mundo Digital",
+    "localizacao": "PISO TÉRREO"
+  },
+  {
+    "idloja": 10,
+    "nome": "Jardim das Flores",
+    "localizacao": "PISO 6"
+  }
+]

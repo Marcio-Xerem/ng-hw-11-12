@@ -1,0 +1,17 @@
+<div class="container">
+  <!-- Formulário para a requisição PATCH -->
+  <form (submit)="patchPost()">
+    <h2>Requisição PATCH</h2>
+    <label>
+      Novo Título:
+      <input type="text" [(ngModel)]="patchData.title" name="title" required />
+    </label>
+    <button type="submit">Atualizar Parcialmente</button>
+  </form>
+
+  <!-- Painel de Resposta -->
+  <div class="response-panel" *ngIf="response">
+    <h3>Resposta da API</h3>
+    <p>{{ response | json }}</p>
+  </div>
+</div>

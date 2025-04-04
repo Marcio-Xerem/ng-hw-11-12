@@ -1,0 +1,19 @@
+<h1>Homework 11-12 - Criando rotas e consumindo APIs</h1>
+<nav>
+  <ul>
+    <li><a routerLink="/home" routerLinkActive=".active">Início</a></li>
+    <li><a routerLink="/lista" routerLinkActive=".active">Lista</a></li>
+    <li><a routerLink="/api-get" routerLinkActive=".active">API Get</a></li>
+    <li><a routerLink="/api-post" routerLinkActive=".active">API Post</a></li>
+    <li><a routerLink="/api-put" routerLinkActive=".active">API Put</a></li>
+    <li><a routerLink="/api-pacth" routerLinkActive=".active">API Pacth</a></li>
+    <li><a routerLink="/api-delete" routerLinkActive=".active">API Delete</a></li>
+  </ul>
+</nav>
+<router-outlet />
+
+<div id="fecho">
+  <span>Aluno: {{ aluno }}</span>
+  <span>Curso: {{ curso }}</span>
+  <span>Turma: {{ turma }}</span>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+<h2>Lista de lojas:</h2>
+<ol>
+  @for(loja of _listaLojas; track loja.idloja){
+  <li>{{loja.nome}} - {{loja.localizacao}}</li>
+  }
+  @empty {
+  <li>Não há lojas cadastradas.</li>
+  }
+</ol>
+</div>

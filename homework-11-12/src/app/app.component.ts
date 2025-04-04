@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterLink, RouterLinkActive, RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'hw-11-12';
+  aluno = 'Márcio da Mota Xerém';
+  curso = 'Step Computer Academy';
+  turma = '12SPS9';
+}
+

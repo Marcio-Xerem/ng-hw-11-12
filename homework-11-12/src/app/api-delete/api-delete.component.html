@@ -1,0 +1,27 @@
+<div class="container">
+  <!-- Formulário -->
+  <form (submit)="getPostById()">
+    <h2>Buscar Post</h2>
+    <label>
+      ID do Post:
+      <input type="number" [(ngModel)]="postId" name="postId" placeholder="Digite o ID do post" required />
+    </label>
+    <button type="submit">Buscar Post</button>
+  </form>
+
+  <!-- Painel de Seção do Post -->
+  <div class="post-panel" *ngIf="selectedPost">
+    <h2>Post Selecionado</h2>
+    <p><strong>ID:</strong> {{ selectedPost.id }}</p>
+    <p><strong>Título:</strong> {{ selectedPost.title }}</p>
+    <p><strong>Corpo:</strong> {{ selectedPost.body }}</p>
+    <p><strong>ID do Usuário:</strong> {{ selectedPost.userId }}</p>
+    <button (click)="deletePost()">Deletar Post</button>
+  </div>
+
+  <!-- Painel de Resposta -->
+  <div class="response-panel" *ngIf="deleteMessage">
+    <h3>Resposta da API</h3>
+    <p>{{ deleteMessage }}</p>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+  <!-- Formulário -->
+  <form (submit)="updatePost()">
+    <h2>Requisição PUT</h2>
+    <label>
+      ID do Post:
+      <input type="number" [(ngModel)]="updatedPost.id" placeholder="ID do post" value="1" readonly />
+    </label>
+    <label>
+      Título:
+      <input type="text" [(ngModel)]="updatedPost.title" name="title" placeholder="Título do post" required />
+    </label>
+    <label>
+      Corpo:
+      <textarea [(ngModel)]="updatedPost.body" name="body" placeholder="Corpo do post" required></textarea>
+    </label>
+    <label>
+      ID do Usuário:
+      <input type="number" [(ngModel)]="updatedPost.userId" name="userId" placeholder="ID do usuário" required />
+    </label>
+    <button type="submit">Atualizar</button>
+  </form>
+
+  <!-- Painel -->
+  <div class="post-panel" *ngIf="response">
+    <h3>Post Atualizado</h3>
+    <p><strong>ID do Post:</strong> {{ response.id }}</p>
+    <p><strong>Título:</strong> {{ response.title }}</p>
+    <p><strong>Corpo:</strong> {{ response.body }}</p>
+    <p><strong>ID do Usuário:</strong> {{ response.userId }}</p>
+  </div>
+</div>
